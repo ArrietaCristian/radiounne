@@ -3,7 +3,7 @@
         <nav class="navbar navbar-expand-md navbar-dark img-responsive " >
             <div class="container"  >
                 <a class="navbar-brand" href="#">
-                    <img class="img-responsive" src="{{$img->get(23)->url}}" style="width: 80px; height: 30px;  margin-left: 0px;">
+                    <img class="img-responsive" src="{{$img->get(27)->url}}" style="width: 80px; height: 30px;  margin-left: 0px;">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

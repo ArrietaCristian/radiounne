@@ -18,7 +18,7 @@
 	<div class="row">
 	<div class="col-md-4">
 	<h1><strong><u>Facebook</u></strong></h1>  <DIV>
-                <a href="https://www.facebook.com/RadioUNNE997" target="_blank"><img src="{{$img->get(30)->url}}" width="50%"></a>
+                <a href="https://www.facebook.com/RadioUNNE997" target="_blank"><img src="{{$img->get(26)->url}}" width="50%"></a>
                 </DIV>
      </div>
      <div class="col-md-6">
@@ -33,7 +33,7 @@
  <div class="row">
 	<div class="col-md-4">
 	<h1><strong><u>Twitter</u></strong></h1>	<DIV>
-                <a href="http://www.twitter.com/RadioUNNE997" target="_blank" ><img src="{{$img->get(29)->url}}" width="50%"></a>
+                <a href="http://www.twitter.com/RadioUNNE997" target="_blank" ><img src="{{$img->get(25)->url}}" width="50%"></a>
                 </DIV>
      </div>
      <div class="col-md-6">
@@ -48,7 +48,7 @@
   <div class="row">
 	<div class="col-md-4">
 	<h1><strong><u>Instagram</u></strong></h1>	 <DIV>
-                <a href="http://instagram.com/RadioUNNE997" target="_blank" ><img src="{{$img->get(28)->url}}" width="50%"></a>
+                <a href="http://instagram.com/RadioUNNE997" target="_blank" ><img src="{{$img->get(24)->url}}" width="50%"></a>
                 </DIV>
      </div>
      <div class="col-md-6">

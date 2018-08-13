@@ -33,7 +33,7 @@ class PostStoreRequest extends FormRequest
             'category_id' => 'required|integer',
             'tags' => 'required|array',
             'texto'=> 'required',
-            'status'=> 'required|in:BORRADO,PUBLICADO',
+            'status'=> 'required|in:1,0',
             'cabeceraimagen' => 'required',
             // 'urlmultimedia' => 'mimes:mp3,mp4',
         ];

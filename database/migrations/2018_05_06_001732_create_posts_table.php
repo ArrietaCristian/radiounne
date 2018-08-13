@@ -27,7 +27,8 @@ class CreatePostsTable extends Migration
             $table->string('urlmultimedia')->nullable();
             $table->string('cabeceraimagen')->nullable();
             $table->text('texto');
-            $table->enum('status', ['PUBLICADO':0, 'BORRADOR':1])->default('BORRADOR');
+            $table->enum('status', ['PUBLICADO'=>0, 'BORRADOR'=>1]);
+            
 
             
             

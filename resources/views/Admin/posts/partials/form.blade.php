@@ -29,10 +29,10 @@
 <div class="form-group input-group-lg" style="color:white">
 	{{Form::label('status', 'Estado')}}
 	<label>
-		{{Form::radio('status', 'PUBLICADO')}} PUBLICADO
+		{{Form::radio('status', '0')}} PUBLICADO
 	</label>
 	<label>
-		{{Form::radio('status', 'BORRADO')}} BORRADO
+		{{Form::radio('status', '1')}} BORRADO
 	</label>
 </div>
 

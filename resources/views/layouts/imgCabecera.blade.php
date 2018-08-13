@@ -2,7 +2,7 @@
        <section>
            <div class="col-md-12 img-responsive" style="padding-right: 0; padding-left: 0; padding: 0; padding-top: 0; margin-right: 0;" >
            
-            <img class="img-responsive" src="{{$img->get(24)->url}}"  style=" padding-right: 0; padding-top: 0; padding-left: 0; padding: 0; margin-right: 0; margin-left: 0; ">
+            <img class="img-responsive" src="{{$img->get(28)->url}}"  style=" padding-right: 0; padding-top: 0; padding-left: 0; padding: 0; margin-right: 0; margin-left: 0; ">
         
             
            </div>  
@@ -20,7 +20,7 @@
                <hr style="margin-top: 15px;">
                
               <h4 style="margin-left: 50px;"><FONT COLOR="#F1BE00"><STRONG>RADIO UNNE 997</STRONG></FONT></h4>
-                @include('layouts.IR')
+             @include('layouts.IR')
 
              
 
@@ -37,15 +37,15 @@
 
             <div class="row">                   
               
-               <a class="img-responsive " href="https://www.facebook.com/RadioUNNE997" target="_blank"><img src="{{$img->get(30)->url}}" style="margin-left: 10px; margin-right: 10px; width: 50px;" ></a>  
+               <a class="img-responsive " href="https://www.facebook.com/RadioUNNE997" target="_blank"><img src="{{$img->get(26)->url}}" style="margin-left: 10px; margin-right: 10px; width: 50px;" ></a>  
                 
                
-               <a class="img-responsive" href="http://www.twitter.com/RadioUNNE997" target="_blank" ><img src="{{$img->get(29)->url}}" style="margin-left: 10px; margin-right: 10px; width: 50px;"></a> 
+               <a class="img-responsive" href="http://www.twitter.com/RadioUNNE997" target="_blank" ><img src="{{$img->get(25)->url}}" style="margin-left: 10px; margin-right: 10px; width: 50px;"></a> 
                 
                 
-                <a class="img-responsive" href="https://www.youtube.com/user/RadioUNNE997" target="_blank"><img src="{{$img->get(27)->url}}" style="margin-left: 10px; margin-right: 10px; width: 50px;" ></a> 
+                <a class="img-responsive" href="https://www.youtube.com/user/RadioUNNE997" target="_blank"><img src="{{$img->get(23)->url}}" style="margin-left: 10px; margin-right: 10px; width: 50px;" ></a> 
                  
-                <a class="img-responsive" href="http://instagram.com/RadioUNNE997" target="_blank" ><img src="{{$img->get(28)->url}}" style="margin-left: 10px; margin-right: 10px; width: 50px;" ></a> 
+                <a class="img-responsive" href="http://instagram.com/RadioUNNE997" target="_blank" ><img src="{{$img->get(24)->url}}" style="margin-left: 10px; margin-right: 10px; width: 50px;" ></a> 
              
               
                  </div>
