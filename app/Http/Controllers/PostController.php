@@ -24,7 +24,6 @@ class PostController extends Controller
     {    	
     	
     	
-
     	$P = post::orderBy('id', 'desc')->get();
     	$Imagen = Imagen::orderBy('id', 'desc')->get();
     	$tv=post::orderBy('totalV', 'desc')->get();

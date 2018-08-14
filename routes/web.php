@@ -68,4 +68,4 @@ Route::get('tags', 'Admin\TagController@index');
 Route::resource('tags', 'Admin\TagController');
 Route::resource('categories', 'Admin\CategoryController');
 Route::resource('posts', 'Admin\PostController');
-Route::resource('imagenes', 'Admin\ImagenController');
+Route::resource('imagenesRADIOUNNE997', 'Admin\ImagenController');

@@ -59,7 +59,7 @@ class ImagenController extends Controller
             $imagen->fill(['url'=>asset($path)])->save();
         }
 
-        return redirect()->route('imagenes.index', $imagen->id)->with('info', 'Categoria creada con exito');
+        return redirect()->route('imagenesRADIOUNNE997.index', $imagen->id)->with('info', 'Categoria creada con exito');
     }
 
     /**
@@ -101,7 +101,7 @@ class ImagenController extends Controller
 
         $imagen->fill($request->all())->save();
 
-         return redirect()->route('imagenes.edit', $imagen->id)->with('info', 'Categoria actualizada con exito');
+         return redirect()->route('imagenesRADIOUNNE997.edit', $imagen->id)->with('info', 'Categoria actualizada con exito');
     }
 
     /**

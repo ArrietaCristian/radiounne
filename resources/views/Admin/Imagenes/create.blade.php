@@ -33,7 +33,7 @@
 
 			
 			<div class="panel-body">
-				{!!Form::open(['route' => 'imagenes.store', 'files'=>true])!!}
+				{!!Form::open(['route' => 'imagenesRADIOUNNE997.store', 'files'=>true])!!}
 
 				<div class="form-group" style="color:black">
 					{{Form::label('descripcion', 'Nombre de la imagen')}}

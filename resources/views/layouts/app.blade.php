@@ -26,6 +26,8 @@
 
                         
                         <li><a class="nav-link" href="{{url('/post/prog')}}" onmouseover="this.style.background='grey'" onmouseout="this.style.background='black'"><FONT COLOR="#F1BE00"><strong>&nbsp PROGRAMACIÓN &nbsp</strong></FONT></a></li>
+
+                        <li><a class="nav-link" href="http://medios.unne.edu.ar" target="_blank" onmouseover="this.style.background='grey'" onmouseout="this.style.background='black'"><FONT COLOR="#F1BE00"><strong>&nbsp UNNE Medios &nbsp</strong></FONT></a></li>
                          
 
                     </ul>

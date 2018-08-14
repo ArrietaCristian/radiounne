@@ -31,7 +31,7 @@
 				</div>
 			
 			<div class="panel-body">
-				{!!Form::model($imagen, ['route' => ['imagenes.update', $imagen->id], 'method' => 'PUT', 'files' => true])!!}
+				{!!Form::model($imagen, ['route' => ['imagenesRADIOUNNE997.update', $imagen->id], 'method' => 'PUT', 'files' => true])!!}
 
 			<div class="form-group" style="color:black">
 				{{Form::label('descripcion', 'Nombre de la etiqueta')}}

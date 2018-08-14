@@ -7,7 +7,7 @@
 			<div class="panel panel-default" bordercolor="#F9F8F3">
 				<div class="panel-heading" bordercolor="#F9F8F3">
 					Lista de Imagenes
-					<a href="{{route('imagenes.create')}}" class="btn btn-sm btn-primary text-right">
+					<a href="{{route('imagenesRADIOUNNE997.create')}}" class="btn btn-sm btn-primary text-right">
 						Crear	
 					 </a>
 				</div>
@@ -26,15 +26,15 @@
 							<tr>
 								<td style="color:white">{{$imagen['id']}}</td>
 								<td style="color:white">{{$imagen['descripcion']}}</td>
-								<td width="10px"><a href="{{route('imagenes.show', $imagen['id'])}}" class="btn btn-sm btn-default"> Ver
+								<td width="10px"><a href="{{route('imagenesRADIOUNNE997.show', $imagen['id'])}}" class="btn btn-sm btn-default"> Ver
 								</a>
 							</td>
 							
-								<td width="10px"><a href="{{route('imagenes.edit', $imagen['id'])}}" class="btn btn-sm btn-default"> Editar
+								<td width="10px"><a href="{{route('imagenesRADIOUNNE997.edit', $imagen['id'])}}" class="btn btn-sm btn-default"> Editar
 								</a>
 							</td>
 							<td width="10px">
-								{!! Form::open(['route' =>['imagenes.destroy', $imagen['id']], 'method' => 'DELETE'])!!}
+								{!! Form::open(['route' =>['imagenesRADIOUNNE997.destroy', $imagen['id']], 'method' => 'DELETE'])!!}
 
 								<button class="btn btn-sm btn-danger">
 									Eliminar

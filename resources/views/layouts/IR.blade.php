@@ -1,7 +1,8 @@
   
 
+@php (date_default_timezone_set('America/Argentina/Buenos_Aires')) 
 
- @switch($dia=date("l") and $hora=(date("G")-3) and $min=date('i'))
+ @switch($dia=date("l") and $hora=(date("G")) and $min=date('i'))
 
 
                       @case($dia==="Monday" and $hora>=00 and $hora<6 and $min>=00 and $min<=59) 
