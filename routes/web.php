@@ -41,7 +41,7 @@ Route::get('/post/contacto', 'PostController@getContacto');
 Route::get('/post/anteriores', 'PostController@anteriores');
 
 
-Route::get('post/searchredirect', function(){
+Route::get('post/search', function(){
      
     /* Nuevo: si el argumento search está vacío regresar a la página anterior */
     if (empty(Input::get('search'))) return redirect()->back();
@@ -49,8 +49,11 @@ Route::get('post/searchredirect', function(){
     $search = urlencode(e(Input::get('search')));
     $route = 'post/search/'.$search;
     return redirect($route);
-});
+})->name('post.search');
 Route::get('post/search/{search}', 'PostController@search');
+
+
+
 
 
 

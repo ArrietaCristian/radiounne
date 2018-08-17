@@ -49,13 +49,18 @@
              
               
                  </div>
-                <form class="navbar-form navbar-left" role="search" action="{{url('post/searchredirect')}}">
+                <!-- <form class="navbar-form navbar-left" role="search" action="{{url('post/search')}}" method="GET" >
                   <br>
                         <div class="form-group ">
                         <input type="text" class="form-control col-xs-8" size= name='search' placeholder="Buscar ..." />
                         </div>
                         <button type="submit" class="glyphicon glyphicon-search" style="background:black;color: white; width: 190px;"></button>
-                    </form>
+                    </form> -->
+                    <br>
+                    {{ Form::open(['route' => ['post.search'], 'method' => 'GET']) }}
+                      <p>{{ Form::text('search', old('search'), array('placeholder'=>'buscar...')) }}</p>
+                       <p>{{ Form::submit('BUSCAR', ['class' => 'glyphicon glyphicon-search', 'style' => 'background:black;color: white; width: 190px;']) }}</p>
+                    {{ Form::close() }}
             
                </div>            
             
