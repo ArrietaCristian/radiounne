@@ -72,7 +72,13 @@
  
 
         </head>
+            <div id="cont_c8a07a1cf4ae081cc513caa6c8bc6dba"><script type="text/javascript" async src="https://www.meteored.com.ar/wid_loader/c8a07a1cf4ae081cc513caa6c8bc6dba"></script></div>
 
+
+            <br>
+    <br>
+    <br>
+    <br>
                 <div class="carousel slide" data-ride="carousel" id="carousel-1" style="border: grey 2px solid;">
                     <div class="carousel-inner" role="listbox">
                         <div class="item active"><img class="img-responsive" src="{{$img->get(1)->url}}" alt="El Baúl" height="250"><div class="carousel-caption "><h5 style="color: aqua; background: grey">Sábado de 19 a 22</h5></div></div>

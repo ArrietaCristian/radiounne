@@ -2,6 +2,8 @@
 
 @section('content')
 
+
+
 <div class="container">
 
   <div class="row">
@@ -26,7 +28,11 @@
                  <div class="row">
 
                   <div class="col-md-6">
-                          <a href="{{ url('/post/show/' . $POST->get(8)->id) }}">
+
+                               
+
+                        
+                        <a  href="{{ url('/post/show/'. $POST->get(8)->id )}}"> 
                           <img class="img-thumbnail img-responsive" src="{{$POST->get(8)->cabeceraimagen}}"></a>
                            @if($POST->get(8)->urlmultimedia == null)    
                              <audio  id="player2" src="{{$POST->get(8)->urlmultimedia}}" style="display: none"></audio>                           
@@ -43,8 +49,9 @@
                             <h5 style="color: white">"{{$POST->get(8)->titulo}}" </h5>
                             </a>
                         </div>
-
+                 
                         <div class="col-md-6">
+                          
                           <a href="{{ url('/post/show/' . $POST->get(9)->id) }}">
                           <img class="img-thumbnail img-responsive" src="{{$POST->get(9)->cabeceraimagen}}"></a>
                            @if($POST->get(9)->urlmultimedia == null)    

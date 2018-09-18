@@ -1,5 +1,7 @@
 <?php
 
+
+use App\post;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,7 +27,27 @@ Route::get('/post', 'PostController@getIndex');
 
 // Route::get('/post', 'ImagenController@getImagen');
 
-Route::get('/post/show/{id}', 'PostController@getShow');
+
+
+
+// Route::get('/post/show/', function($id, $titulo)
+// {
+
+	
+	
+// 	$slug = strtolower($titulo);
+// 	$slugs = preg_replace('/[^A-Za-z0-9-]+/','-',$slug);
+
+
+// 	$route = '/post/show/{id}'.$slugs;
+//     return redirect($route);
+// })->name('post.show');  
+	Route::get('/post/show/{id}', 'PostController@getshow');
+
+ 
+
+
+	
 
 
 Route::get('/post/create', 'PostController@getCreate');

@@ -63,7 +63,7 @@
 	<script src="{{asset('vendor/ckeditor/ckeditor.js')}}"></script>
 	<script type="">
 		$(document).ready(function(){
-			$("#descripcion, #slug").stringToSlug({
+			$("#titulo, #slug").stringToSlug({
 				callback: function(text){
 					$("#slug").val(text);
 				}

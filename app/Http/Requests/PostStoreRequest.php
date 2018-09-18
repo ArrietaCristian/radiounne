@@ -27,7 +27,7 @@ class PostStoreRequest extends FormRequest
     {
         return  [
             
-            'slug' => 'required|unique:posts,slug',
+            // 'slug' => 'required|unique:posts,slug',
             'titulo' => 'required',
             'user_id' => 'required|integer',
             'category_id' => 'required|integer',
