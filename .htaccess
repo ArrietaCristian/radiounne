@@ -1,8 +1,0 @@
-
-# Activar RewriteEngine
-RewriteEngine on
-
-# Reescribir la URL solicitada por el usuario
-#   Entrada:  post/show/
-#   Salida: post.php?id=titulo
-RewriteRule ^post/(\w+)/?$ show.php?id=$1
