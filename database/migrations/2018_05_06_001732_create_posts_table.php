@@ -1,4 +1,4 @@
-<?php
+   <?php
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
@@ -21,13 +21,14 @@ class CreatePostsTable extends Migration
             $table->integer('category_id')->unsigned();
 
             $table->string('descripcion', 128)->nullable();
-            $table->string('slug', 128)->unique();
+            // $table->string('slug', 128)->unique();
+            $table->string('slug', 128)->nullable()->default(null);
 
             $table->text('titulo');
             $table->string('urlmultimedia')->nullable();
             $table->string('cabeceraimagen')->nullable();
             $table->text('texto');
-            $table->enum('status', ['PUBLICADO'=>0, 'BORRADOR'=>1]);
+            $table->enum('status', ['PUBLICADO'=>0, 'BORRADOR'=>1])->default(0);
             
 
             

@@ -18,58 +18,72 @@
             
                   
              <div class="row ">
+                <div class="col-md-12">
                        <a href="{{ url('/post/show/' . $POST->get(0)->id) }}">
                         <div class="col-md-4"><img class="img-responsive img-thumbnail" src="{{$POST->get(0)->cabeceraimagen}}" style="width: 120px; height: 100px;"></div>
                         <div class="col-md-6">
-                        <p>{!! str_limit($POST->get(0)->texto, $limit = 100, $end = '...') !!}</p>
+                        <p>{!! str_limit($POST->get(0)->titulo, $limit = 100, $end = '...') !!}</p>
                         </div>
-                       </a>
-                       <br> 
-             </div>
+                       </a></div>
+                        
+             </div><br>
                
             <div class="row">
+                <div class="col-md-12">
                 	<a href="{{ url('/post/show/' . $POST->get(1)->id) }}">
                         <div class="col-md-4"><img class="img-responsive img-thumbnail" src="{{$POST->get(1)->cabeceraimagen}}"" style="width: 120px; height: 100px;"></div>
                         <div class="col-md-6">
-                        <p>{!! str_limit($POST->get(1)->texto, $limit = 100, $end = '...') !!}</p>
+                        <p>{!! str_limit($POST->get(1)->titulo, $limit = 100, $end = '...') !!}</p>
                         </div>
                     </a>
-                    <br> 
-            </div>
+                    </div>
+                 </div>
+                 <br> 
+
                 <div class="row">
+                     <div class="col-md-12">
                    <a href="{{ url('/post/show/' . $POST->get(2)->id) }}">
                     <div class="col-md-4"><img class="img-responsive img-thumbnail" src="{{$POST->get(2)->cabeceraimagen}}" style="width: 120px; height: 100px;"></div>
                     <div class="col-md-6">
-                        <p>{!! str_limit($POST->get(2)->texto, $limit = 100, $end = '...') !!} </p>
+                        <p>{!! str_limit($POST->get(2)->titulo, $limit = 100, $end = '...') !!} </p>
                     </div>
                    </a>
-                   <br> 
+                  </div>
                 </div>
+                 <br> 
+
                 <div class="row">
+                    <div class="col-md-12">
                    <a href="{{ url('/post/show/' . $POST->get(3)->id) }}">
                     <div class="col-md-4"><img class="img-responsive img-thumbnail" src="{{$POST->get(3)->cabeceraimagen}}" style="width: 120px; height: 100px;"></div>
                     <div class="col-md-6">
-                        <p>{!! str_limit($POST->get(3)->texto, $limit = 100, $end = '...') !!} </p>
+                        <p>{!! str_limit($POST->get(3)->titulo, $limit = 100, $end = '...') !!} </p>
                     </div>
                    </a>
                 </div>
         </div>
+    </div>
  </div>
  
 
 <div class="col-md-10 col-md-offset-0 " style="margin-left: 40px;">
     <br>
     <br>
-    <br>
-    <br>
+    
+    
      <head>
+        
+        <section style="background:grey">
+                        <h2><strong style="color: white">El tiempo en Corrientes</strong></h2>
+                </section>
+
                 <title>Bootstrap Example</title>
                     <meta charset="utf-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1">
                     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- 
+
 
         </head>
             <div id="cont_c8a07a1cf4ae081cc513caa6c8bc6dba"><script type="text/javascript" async src="https://www.meteored.com.ar/wid_loader/c8a07a1cf4ae081cc513caa6c8bc6dba"></script></div>
@@ -129,8 +143,8 @@
                 </div>
             <br><br><br>
 				</div>		
-              
-                <hr>
+            
+               
 <div class="col-md-12">
    
                         <div>

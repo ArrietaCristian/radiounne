@@ -6,10 +6,10 @@
 	{{Form::text('titulo', null, ['class' => 'form-control', 'id' => 'titulo'])}}
 </div>
 
-<div class="form-group input-group-lg" style="color:white">
+<!-- <div class="form-group input-group-lg" style="color:white">
 	{{Form::label('slug', 'URL amigable')}}
 	{{Form::text('slug', null, ['class' => 'form-control', 'id' => 'slug'])}}
-</div>
+</div> -->
 
 <div class="form-group input-group-lg"  style="color:white">
 	{{Form::label('category_id', 'Categorias')}}
@@ -21,19 +21,19 @@
 	{{Form::file('cabeceraimagen')}}
 </div>
 
-<div class="form-group input-group-lg" style="color:white">
+<!-- <div class="form-group input-group-lg" style="color:white">
 	{{Form::label('urlmultimedia', 'audio-video')}}
 	{{Form::file('urlmultimedia')}}
-</div>
+</div> -->
 
 <div class="form-group input-group-lg" style="color:white">
 	{{Form::label('status', 'Estado')}}
 	<label>
-		{{Form::radio('status', '0')}} PUBLICADO
+		{{Form::radio('status', '0')}} PUBLICAR
 	</label>
-	<label>
+	<!-- <label>
 		{{Form::radio('status', '1')}} BORRADO
-	</label>
+	</label> -->
 </div>
 
 <div class="form-group input-group-lg" style="color:white">

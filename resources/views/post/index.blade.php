@@ -32,12 +32,12 @@
                                
 
                         
-                        <a  href="{{ url('/post/show/'. $POST->get(8)->id )}}"> 
-                          <img class="img-thumbnail img-responsive" src="{{$POST->get(8)->cabeceraimagen}}"></a>
-                           @if($POST->get(8)->urlmultimedia == null)    
-                             <audio  id="player2" src="{{$POST->get(8)->urlmultimedia}}" style="display: none"></audio>                           
+                        <a  href="{{ url('/post/show/'. $POST->get(2)->id )}}"> 
+                          <img class="img-thumbnail img-responsive" src="{{$POST->get(2)->cabeceraimagen}}"></a>
+                           @if($POST->get(2)->urlmultimedia == null)    
+                             <audio  id="player2" src="{{$POST->get(2)->urlmultimedia}}" style="display: none"></audio>                           
                           @else
-                             <audio  id="player2" src="{{$POST->get(8)->urlmultimedia}}"></audio>
+                             <audio  id="player2" src="{{$POST->get(2)->urlmultimedia}}"></audio>
                             <div class="img-responsive">
                             <button style="background:black" onclick="document.getElementById('player2').play()">Play</button>
                             <button style="background:black" onclick="document.getElementById('player2').pause()">Pause</button>
@@ -45,19 +45,19 @@
                             <button style="background:black" onclick="document.getElementById('player2').volume-=0.1">Vol -</button>
                             </div> 
                            @endif 
-                           <a href="{{ url('/post/show/' . $POST->get(8)->id) }}">
-                            <h5 style="color: white">"{{$POST->get(8)->titulo}}" </h5>
+                           <a href="{{ url('/post/show/' . $POST->get(2)->id) }}">
+                            <h5 style="color: white">"{{$POST->get(2)->titulo}}" </h5>
                             </a>
                         </div>
                  
                         <div class="col-md-6">
                           
-                          <a href="{{ url('/post/show/' . $POST->get(9)->id) }}">
-                          <img class="img-thumbnail img-responsive" src="{{$POST->get(9)->cabeceraimagen}}"></a>
-                           @if($POST->get(9)->urlmultimedia == null)    
-                             <audio  id="player2" src="{{$POST->get(9)->urlmultimedia}}" style="display: none"></audio>                           
+                          <a href="{{ url('/post/show/' . $POST->get(3)->id) }}">
+                          <img class="img-thumbnail img-responsive" src="{{$POST->get(3)->cabeceraimagen}}"></a>
+                           @if($POST->get(3)->urlmultimedia == null)    
+                             <audio  id="player2" src="{{$POST->get(3)->urlmultimedia}}" style="display: none"></audio>                           
                           @else
-                             <audio  id="player2" src="{{$POST->get(9)->urlmultimedia}}"></audio>
+                             <audio  id="player2" src="{{$POST->get(3)->urlmultimedia}}"></audio>
                             <div class="img-responsive">
                             <button style="background:black" onclick="document.getElementById('player2').play()">Play</button>
                             <button style="background:black" onclick="document.getElementById('player2').pause()">Pause</button>
@@ -65,8 +65,8 @@
                             <button style="background:black" onclick="document.getElementById('player2').volume-=0.1">Vol -</button>
                             </div> 
                            @endif 
-                           <a href="{{ url('/post/show/' . $POST->get(9)->id) }}">
-                            <h5 style="color: white">"{{$POST->get(9)->titulo}}" </h5>
+                           <a href="{{ url('/post/show/' . $POST->get(3)->id) }}">
+                            <h5 style="color: white">"{{$POST->get(3)->titulo}}" </h5>
                             </a>
                         </div>
                      
@@ -115,26 +115,7 @@
                         
                          <div class="col-md-4" >  
 
-                            <a href="{{ url('/post/show/' . $POST->get(3)->id) }}">
-                          <img class="img-thumbnail img-responsive" src="{{$POST->get(3)->cabeceraimagen}}"></a>
-                           @if($POST->get(3)->urlmultimedia == null)    
-                             <audio  id="player2" src="{{$POST->get(3)->urlmultimedia}}" style="display: none"></audio>                           
-                          @else
-                             <audio  id="player2" src="{{$POST->get(3)->urlmultimedia}}"></audio>
-                            <div class="img-responsive">
-                            <button style="background:black" onclick="document.getElementById('player2').play()">Play</button>
-                            <button style="background:black" onclick="document.getElementById('player2').pause()">Pause</button>
-                            <button style="background:black" onclick="document.getElementById('player2').volume+=0.1">Vol +</button>
-                            <button style="background:black" onclick="document.getElementById('player2').volume-=0.1">Vol -</button>
-                            </div> 
-                           @endif 
-                           <a href="{{ url('/post/show/' . $POST->get(3)->id) }}">
-                            <h5 style="color: white">"{{$POST->get(3)->titulo}}" </h5>
-                            </a>
-                      </div>
-                    
-                      <div class="col-md-4">
-                          <a href="{{ url('/post/show/' . $POST->get(4)->id) }}">
+                            <a href="{{ url('/post/show/' . $POST->get(4)->id) }}">
                           <img class="img-thumbnail img-responsive" src="{{$POST->get(4)->cabeceraimagen}}"></a>
                            @if($POST->get(4)->urlmultimedia == null)    
                              <audio  id="player2" src="{{$POST->get(4)->urlmultimedia}}" style="display: none"></audio>                           
@@ -150,9 +131,9 @@
                            <a href="{{ url('/post/show/' . $POST->get(4)->id) }}">
                             <h5 style="color: white">"{{$POST->get(4)->titulo}}" </h5>
                             </a>
-                       </div>
-
-                       <div class="col-md-4">
+                      </div>
+                    
+                      <div class="col-md-4">
                           <a href="{{ url('/post/show/' . $POST->get(5)->id) }}">
                           <img class="img-thumbnail img-responsive" src="{{$POST->get(5)->cabeceraimagen}}"></a>
                            @if($POST->get(5)->urlmultimedia == null)    
@@ -171,6 +152,25 @@
                             </a>
                        </div>
 
+                       <div class="col-md-4">
+                          <a href="{{ url('/post/show/' . $POST->get(6)->id) }}">
+                          <img class="img-thumbnail img-responsive" src="{{$POST->get(6)->cabeceraimagen}}"></a>
+                           @if($POST->get(6)->urlmultimedia == null)    
+                             <audio  id="player2" src="{{$POST->get(6)->urlmultimedia}}" style="display: none"></audio>                           
+                          @else
+                             <audio  id="player2" src="{{$POST->get(6)->urlmultimedia}}"></audio>
+                            <div class="img-responsive">
+                            <button style="background:black" onclick="document.getElementById('player2').play()">Play</button>
+                            <button style="background:black" onclick="document.getElementById('player2').pause()">Pause</button>
+                            <button style="background:black" onclick="document.getElementById('player2').volume+=0.1">Vol +</button>
+                            <button style="background:black" onclick="document.getElementById('player2').volume-=0.1">Vol -</button>
+                            </div> 
+                           @endif 
+                           <a href="{{ url('/post/show/' . $POST->get(6)->id) }}">
+                            <h5 style="color: white">"{{$POST->get(6)->titulo}}" </h5>
+                            </a>
+                       </div>
+
 
                     </div>
                 </div>
@@ -180,16 +180,16 @@
 
 <div class="col-md-12">
               <br><br>
-                    	<a href="{{ url('/post/show/' . $POST->get(2)->id) }}">                      
-                      <img class="img-responsive" width="100%" src="{{$POST->get(2)->cabeceraimagen}}">
+                    	<a href="{{ url('/post/show/' . $POST->get(1)->id) }}">                      
+                      <img class="img-responsive" width="100%" src="{{$POST->get(1)->cabeceraimagen}}">
                     </a>
                        @if($POST->get(2)->urlmultimedia == null)    
                              
-                             <audio class="img-responsive" id="player2" src="{{$POST->get(2)->urlmultimedia}}" style="display: none"></audio>
+                             <audio class="img-responsive" id="player2" src="{{$POST->get(1)->urlmultimedia}}" style="display: none"></audio>
                             
                          
                           @else
-                          <audio  id="player2" src="{{$POST->get(2)->urlmultimedia}}"></audio>
+                          <audio  id="player2" src="{{$POST->get(1)->urlmultimedia}}"></audio>
                             <div class="img-responsive">
                             <button style="background:black" onclick="document.getElementById('player2').play()">Play</button>
                             <button style="background:black" onclick="document.getElementById('player2').pause()">Pause</button>
@@ -199,15 +199,78 @@
                        
                            @endif 
                         
-                       <a href="{{ url('/post/show/' . $POST->get(2)->id) }}">                       
-                           <h2 style="color: white">{{$POST->get(2)->titulo}} </h2>
+                       <a href="{{ url('/post/show/' . $POST->get(1)->id) }}">                       
+                           <h2 style="color: white">{{$POST->get(1)->titulo}} </h2>
                          </a>
  
  				 <div class="row">
 
                         <div class="col-md-3">
+                        	<a href="{{ url('/post/show/' . $POST->get(7)->id) }}">
+                          <img class="img-thumbnail img-responsive" src="{{$POST->get(7)->cabeceraimagen}}"></a>
+                           @if($POST->get(7)->urlmultimedia == null)    
+                             <audio  id="player2" src="{{$POST->get(7)->urlmultimedia}}"></audio>
+                            
+                          @else
+                            <audio  id="player2" src="{{$POST->get(7)->urlmultimedia}}"></audio>
+                            <div class=" img-responsive">
+                            <button style="background:black" onclick="document.getElementById('player2').play()"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
+                            <button style="background:black" onclick="document.getElementById('player2').pause()">
+                              <span class="glyphicon glyphicon-pause"></span></button>
+                            <button style="background:black" onclick="document.getElementById('player2').volume+=0.1"><span class="glyphicon glyphicon-volume-up"></span></button>
+                            <button style="background:black" onclick="document.getElementById('player2').volume-=0.1"><span class="glyphicon glyphicon-volume-down"></span></button>
+                            </div> 
+                           @endif 
+                           <a href="{{ url('/post/show/' . $POST->get(7)->id) }}">
+                            <h5 style="color: white">"{{$POST->get(7)->titulo}}" </h5>
+                            </a>
+                        </div>
+
+                        <div class="col-md-3">
+                        <a href="{{ url('/post/show/' . $POST->get(8)->id) }}">
+                          <img class="img-thumbnail img-responsive" src="{{$POST->get(8)->cabeceraimagen}}"></a>
+                           @if($POST->get(8)->urlmultimedia == null)    
+                             <audio  id="player2" src="{{$POST->get(8)->urlmultimedia}}"></audio>
+                            
+                          @else
+                            <audio  id="player2" src="{{$POST->get(8)->urlmultimedia}}"></audio>
+                            <div class=" img-responsive">
+                            <button style="background:black" onclick="document.getElementById('player2').play()"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
+                            <button style="background:black" onclick="document.getElementById('player2').pause()">
+                              <span class="glyphicon glyphicon-pause"></span></button>
+                            <button style="background:black" onclick="document.getElementById('player2').volume+=0.1"><span class="glyphicon glyphicon-volume-up"></span></button>
+                            <button style="background:black" onclick="document.getElementById('player2').volume-=0.1"><span class="glyphicon glyphicon-volume-down"></span></button>
+                            </div> 
+                           @endif 
+                           <a href="{{ url('/post/show/' . $POST->get(8)->id) }}">
+                            <h5 style="color: white">"{{$POST->get(8)->titulo}}" </h5>
+                            </a>
+                        </div>
+
+                        <div class="col-md-3">
+                        	<a href="{{ url('/post/show/' . $POST->get(9)->id) }}">
+                          <img class="img-thumbnail img-responsive" src="{{$POST->get(9)->cabeceraimagen}}"></a>
+                           @if($POST->get(9)->urlmultimedia == null)    
+                             <audio  id="player2" src="{{$POST->get(9)->urlmultimedia}}"></audio>
+                            
+                          @else
+                            <audio  id="player2" src="{{$POST->get(9)->urlmultimedia}}"></audio>
+                            <div class=" img-responsive">
+                            <button style="background:black" onclick="document.getElementById('player2').play()"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
+                            <button style="background:black" onclick="document.getElementById('player2').pause()">
+                              <span class="glyphicon glyphicon-pause"></span></button>
+                            <button style="background:black" onclick="document.getElementById('player2').volume+=0.1"><span class="glyphicon glyphicon-volume-up"></span></button>
+                            <button style="background:black" onclick="document.getElementById('player2').volume-=0.1"><span class="glyphicon glyphicon-volume-down"></span></button>
+                            </div> 
+                           @endif 
+                           <a href="{{ url('/post/show/' . $POST->get(9)->id) }}">
+                            <h5 style="color: white">"{{$POST->get(9)->titulo}}" </h5>
+                            </a>
+                        </div>
+
+                        <div class="col-md-3">
                         	<a href="{{ url('/post/show/' . $POST->get(10)->id) }}">
-                          <img class="img-thumbnail img-responsive" src="{{$POST->get(10)->cabeceraimagen}}"></a>
+                        	<img class="img-thumbnail img-responsive" src="{{$POST->get(10)->cabeceraimagen}}"></a>
                            @if($POST->get(10)->urlmultimedia == null)    
                              <audio  id="player2" src="{{$POST->get(10)->urlmultimedia}}"></audio>
                             
@@ -223,69 +286,6 @@
                            @endif 
                            <a href="{{ url('/post/show/' . $POST->get(10)->id) }}">
                             <h5 style="color: white">"{{$POST->get(10)->titulo}}" </h5>
-                            </a>
-                        </div>
-
-                        <div class="col-md-3">
-                        <a href="{{ url('/post/show/' . $POST->get(11)->id) }}">
-                          <img class="img-thumbnail img-responsive" src="{{$POST->get(11)->cabeceraimagen}}"></a>
-                           @if($POST->get(11)->urlmultimedia == null)    
-                             <audio  id="player2" src="{{$POST->get(11)->urlmultimedia}}"></audio>
-                            
-                          @else
-                            <audio  id="player2" src="{{$POST->get(11)->urlmultimedia}}"></audio>
-                            <div class=" img-responsive">
-                            <button style="background:black" onclick="document.getElementById('player2').play()"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
-                            <button style="background:black" onclick="document.getElementById('player2').pause()">
-                              <span class="glyphicon glyphicon-pause"></span></button>
-                            <button style="background:black" onclick="document.getElementById('player2').volume+=0.1"><span class="glyphicon glyphicon-volume-up"></span></button>
-                            <button style="background:black" onclick="document.getElementById('player2').volume-=0.1"><span class="glyphicon glyphicon-volume-down"></span></button>
-                            </div> 
-                           @endif 
-                           <a href="{{ url('/post/show/' . $POST->get(11)->id) }}">
-                            <h5 style="color: white">"{{$POST->get(11)->titulo}}" </h5>
-                            </a>
-                        </div>
-
-                        <div class="col-md-3">
-                        	<a href="{{ url('/post/show/' . $POST->get(12)->id) }}">
-                          <img class="img-thumbnail img-responsive" src="{{$POST->get(12)->cabeceraimagen}}"></a>
-                           @if($POST->get(12)->urlmultimedia == null)    
-                             <audio  id="player2" src="{{$POST->get(12)->urlmultimedia}}"></audio>
-                            
-                          @else
-                            <audio  id="player2" src="{{$POST->get(12)->urlmultimedia}}"></audio>
-                            <div class=" img-responsive">
-                            <button style="background:black" onclick="document.getElementById('player2').play()"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
-                            <button style="background:black" onclick="document.getElementById('player2').pause()">
-                              <span class="glyphicon glyphicon-pause"></span></button>
-                            <button style="background:black" onclick="document.getElementById('player2').volume+=0.1"><span class="glyphicon glyphicon-volume-up"></span></button>
-                            <button style="background:black" onclick="document.getElementById('player2').volume-=0.1"><span class="glyphicon glyphicon-volume-down"></span></button>
-                            </div> 
-                           @endif 
-                           <a href="{{ url('/post/show/' . $POST->get(12)->id) }}">
-                            <h5 style="color: white">"{{$POST->get(12)->titulo}}" </h5>
-                            </a>
-                        </div>
-
-                        <div class="col-md-3">
-                        	<a href="{{ url('/post/show/' . $POST->get(13)->id) }}">
-                        	<img class="img-thumbnail img-responsive" src="{{$POST->get(13)->cabeceraimagen}}"></a>
-                           @if($POST->get(0)->urlmultimedia == null)    
-                             <audio  id="player2" src="{{$POST->get(0)->urlmultimedia}}"></audio>
-                            
-                          @else
-                            <audio  id="player2" src="{{$POST->get(0)->urlmultimedia}}"></audio>
-                            <div class=" img-responsive">
-                            <button style="background:black" onclick="document.getElementById('player2').play()"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
-                            <button style="background:black" onclick="document.getElementById('player2').pause()">
-                              <span class="glyphicon glyphicon-pause"></span></button>
-                            <button style="background:black" onclick="document.getElementById('player2').volume+=0.1"><span class="glyphicon glyphicon-volume-up"></span></button>
-                            <button style="background:black" onclick="document.getElementById('player2').volume-=0.1"><span class="glyphicon glyphicon-volume-down"></span></button>
-                            </div> 
-                           @endif 
-                           <a href="{{ url('/post/show/' . $POST->get(13)->id) }}">
-                            <h5 style="color: white">"{{$POST->get(13)->titulo}}" </h5>
                             </a>
                         </div>
 

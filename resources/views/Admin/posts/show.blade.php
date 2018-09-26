@@ -14,12 +14,12 @@
 			<div class="panel-body">
 				<p style="color:white"><strong>Titulo:  </strong>{{$post['titulo']}}</p>
 				
-				<p style="color:white"><strong>Slug:  </strong>{{$post['slug']}}</p>
+				<!-- <p style="color:white"><strong>Slug:  </strong>{{$post['slug']}}</p> -->
 				<hr style="color:white">
 				<p><img src="{{$post['cabeceraimagen']}}" class="img-responsive" ></p>
 				<hr style="color:white">
 				<p style="color:white"><strong>Categoria:  </strong>{{$post['category_id']}}</p>
-				<p style="color:white"><strong>Estado:  </strong>{{$post['status']}}</p>
+				<!-- <p style="color:white"><strong>Estado:  </strong>{{$post['status']}}</p> -->
 				<p style="color:white"><strong>Texto:  </strong>{!!$post['texto']!!}</p>
 			</div>
 		</div>
