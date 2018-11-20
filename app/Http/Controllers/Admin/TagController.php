@@ -42,6 +42,7 @@ class TagController extends Controller
     public function create()
     {
         $img = Imagen::orderBy('id', 'desc')->get(); 
+        
 
     return view('Admin.tags.create', compact('img'));
     }
@@ -68,7 +69,7 @@ class TagController extends Controller
     public function show($id)
     {
         $tag=Tag::find($id);
-
+       
         $img = Imagen::orderBy('id', 'desc')->get(); 
 
         return view('admin.tags.show', compact('tag', 'img'));

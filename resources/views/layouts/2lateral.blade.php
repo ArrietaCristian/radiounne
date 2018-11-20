@@ -1,7 +1,60 @@
-@if( true | Auth::user() )
+<!DOCTYPE html>
+<html>
 
-                           <li><a class="nav-link " href="{{ route('register') }}"   onmouseover="this.style.background='grey'" onmouseout="this.style.background='black'" ><FONT COLOR="#F1BE00"><strong>{{ __('Registrar') }}</strong></FONT></a></li>
+<head>
 
-@endif
 
-                           <li><a class="nav-link " href="{{ route('register') }}" style="display: none"  onmouseover="this.style.background='grey'" onmouseout="this.style.background='black'" ><FONT COLOR="#F1BE00"><strong>{{ __('Registrar') }}</strong></FONT></a></li>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>Radio UNNE 997</title>
+
+     <!-- Scripts -->
+    
+
+
+     <script src="{{asset('js/jquery.min.js')}}"></script>
+
+   
+
+    
+    <script src="http://localhost:8000/assets/bootstrap/js/bootstrap.min.js"></script>
+
+
+     <script src="{{ asset('js/app.js') }}" defer></script>
+
+     <!-- Styles -->
+      
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" >
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+     
+   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+     <!-- Fonts -->
+     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+
+    
+
+</head>
+
+<header style="background:black;">
+       
+    @include('layouts.app')
+    
+</header>
+
+
+<!--  <section>
+           <div class="col-md-12 img-responsive" style="padding-right: 0; padding-left: 0; padding: 0; padding-top: 0; margin-right: 0;" >
+           
+            <img class="img-responsive" src="{{$img->get(29)->url}}"  style=" padding-right: 0; padding-top: 0; padding-left: 0; padding: 0; margin-right: 0; margin-left: 0; ">
+        
+            
+           </div>  
+ </section>
+ -->
+

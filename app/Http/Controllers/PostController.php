@@ -34,8 +34,10 @@ class PostController extends Controller
 
     public function getShow($id)
 {
+	$PP = post::orderBy('id', 'desc')->get();
 	$Imagen = Imagen::orderBy('id', 'desc')->get();
 	$P = post::findOrFail($id);
+	$tv=post::orderBy('totalV', 'desc')->get();
 
 	if(Cache::has($id) == false)
 		{
@@ -46,7 +48,7 @@ class PostController extends Controller
 
 	
 
-    return view('post.show', array('Post' => $P,'img' => $Imagen));
+    return view('post.show', array('POST' => $PP,'Post' => $P,'img' => $Imagen, 'TV'=>$tv,));
 }
 
 public function getCreate()
@@ -102,10 +104,12 @@ public function getSlug($slug){
 public function getCategory($slug){
 	$category = Category::where('slug', $slug)->pluck('id')->first();
 	$posts = post::where('category_id', $category)->orderBy('id', 'desc')->paginate(7);
+	$tv=post::orderBy('totalV', 'desc')->get();
+	$P = post::orderBy('id', 'desc')->get();
 
 	$Imagen = Imagen::orderBy('id', 'desc')->get();
 	
-	return view('post.category', array('POSTS' => $posts, 'img' => $Imagen));
+	return view('post.category', array('POSTS' => $posts, 'img' => $Imagen, 'POST' => $P,'TV'=>$tv,));
 
 }
 
@@ -116,25 +120,32 @@ public function getTag($slug){
 	})->orderBy('id', 'desc')->paginate(7);
 
 	$Imagen = Imagen::orderBy('id', 'desc')->get();
+	$tv=post::orderBy('totalV', 'desc')->get();
+	$P = post::orderBy('id', 'desc')->get();
 
-	return view('post.tag', array('posts' => $posts, 'img' => $Imagen));
+	return view('post.tag', array('posts' => $posts, 'img' => $Imagen, 'POST' => $P,'TV'=>$tv,));
 
 }
 
 public function getProg(){
 
+
+	$tv=post::orderBy('totalV', 'desc')->get();
+	$P = post::orderBy('id', 'desc')->get();
 	$Imagen = Imagen::orderBy('id', 'desc')->get();
 
-	return view('post.programacion', array('img' => $Imagen));
+	return view('post.programacion', array('POST' => $P,'img' => $Imagen,'TV'=>$tv));
 }
 
 public function getContacto(){
 
 	 // $Imagen = Imagen::find(12);
+	$tv=post::orderBy('totalV', 'desc')->get();
+	$P = post::orderBy('id', 'desc')->get();
 	$Imagen = Imagen::orderBy('id', 'desc')->get();
 
 
-	return view('post.contacto', array('img' => $Imagen));
+	return view('post.contacto', array('POST' => $P,'img' => $Imagen,'TV'=>$tv));
 }
 
  public function search($search){
@@ -145,13 +156,15 @@ public function getContacto(){
                 ->orderBy('id', 'desc')
                 ->get();
         $Imagen = Imagen::orderBy('id', 'desc')->get();
+        $tv=post::orderBy('totalV', 'desc')->get();
+	$P = post::orderBy('id', 'desc')->get();
         
         if (count($comments) == 0){
-            return view('post.search', array('img' => $Imagen, 'message' => 'no hay resultados que mostrar', 'search' => $search));
+            return view('post.search', array('POST' => $P,'TV'=>$tv,'img' => $Imagen, 'message' => 'no hay resultados que mostrar', 'search' => $search));
             // ->with('message', 'No hay resultados que mostrar')
             // ->with('search', $search);
         } else{
-            return view('post.search', array('comments' => $comments, 'search' => $search, 'img' => $Imagen));
+            return view('post.search', array('comments' => $comments, 'search' => $search, 'img' => $Imagen,'POST' => $P,'TV'=>$tv,));
             // ->with('comments', $comments)
             // ->with('search', $search);
         }
@@ -162,12 +175,12 @@ public function getContacto(){
 
     public function anteriores(){
 
-
+    	 $tv=post::orderBy('totalV', 'desc')->get();
     	$P = post::orderBy('id', 'desc')->paginate(7);
     	$Imagen = Imagen::orderBy('id', 'desc')->get();
     	
                             
-    	return view('post.anteriores', array('POST' => $P,'img' => $Imagen));
+    	return view('post.anteriores', array('POST' => $P,'img' => $Imagen,'TV'=>$tv,));
     }
 
     

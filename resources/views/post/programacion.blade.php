@@ -1,6 +1,4 @@
-@extends('layouts.master')
-
-@section('content')
+@include('layouts.2lateral')
 
 <!-- <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#F9F8F3"> -->
 
@@ -276,7 +274,49 @@
 
 
 
+ <audio src="http://stream.unne.edu.ar:8000/radio" type="audio/mp4" autoplay="autoplay" id="player" label="Radio UNNE">
+    </audio>
+<hr style="margin:0px;border: 2PX solid grey">
+
+   <!--  <div class="row"> -->
+<!-- 
+    <div class=" col-md-2 img-responsive " align="center" style="background-color: black; "></div>
+    <div class=" col-md-1 img-responsive " align="center" style="background-color: grey; "></div>
+    <div class=" col-md-1 img-responsive " align="center" style="background-color: white; "></div> -->
+ <div class=" col-md-4 img-responsive " style="background-image: url('{{$img->get(0)->url}}'); width: 100; height: 100; ">
+ <!--  <div class="row">
+    <div class="col-md-12">
+        <div class="row" style="margin-bottom:0px; ">
+          <div class="col-md-6"></div>
+          <div class="col-md-6" style="color: black; margin: 0px;"><h3><strong>RADIO UNNE 997</strong></h3></div>
+        </div> -->
+<div class="container">
+                            <img src="{{$img->get(1)->url}}" width="170" height="100" style="border: 2PX solid grey; margin-top: 0px;">
+
+                            <button class="glyphicon glyphicon-play" style="background:grey; color: black " onclick="document.getElementById('player').play()"></button>                            
+                            <button class="glyphicon glyphicon-stop" style="background:grey; color: black " onclick="document.getElementById('player').pause()"></button>
+                            <button class="glyphicon glyphicon-volume-up" style="background:grey; color: black " onclick="document.getElementById('player').volume+=0.1"></button>
+                            <button class="glyphicon glyphicon-volume-down" style="background:grey; color: black " onclick="document.getElementById('player').volume-=0.1"></button>
+                            </div> 
+                        </div>
+     
+  <!-- <div class=" col-md-1 img-responsive " align="center" style="background-color: white; "></div>
+  <div class=" col-md-1 img-responsive " align="center" style="background-color:grey; "></div>
+  <div class=" col-md-2 img-responsive " align="center" style="background-color: black; "></div> -->
+<!-- </div> -->
+<hr style="margin:0px; border: 2PX solid grey">
+
+ <div class="container">
+<br>
+
+<body style="background: black; color: white" >                          
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSi_dmeUlzhd-mUUbkLLmm5knbhPVfO9ZwJ36IZj6KYYhS_EF9DpBflsX0MQwnr5KzMDBzPcEcB9TCp/pubhtml?widget=true&amp;headers=false" style="width: 100%; height: 650px"></iframe> 
+ 
+</body>
+</div>
 
 
-@endsection
+
+
+
+
