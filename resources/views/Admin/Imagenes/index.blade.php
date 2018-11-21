@@ -49,14 +49,14 @@
     
 </header>
 
- <section>
+ <!-- <section>
            <div class="col-md-12 img-responsive" style="padding-right: 0; padding-left: 0; padding: 0; padding-top: 0; margin-right: 0;" >
            
             <img class="img-responsive" src="{{$img->get(29)->url}}"  style=" padding-right: 0; padding-top: 0; padding-left: 0; padding: 0; margin-right: 0; margin-left: 0; ">
         
             
            </div>  
- </section>
+ </section> -->
 
 
     
