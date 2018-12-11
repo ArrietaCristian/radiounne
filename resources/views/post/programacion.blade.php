@@ -291,13 +291,18 @@
           <div class="col-md-6" style="color: black; margin: 0px;"><h3><strong>RADIO UNNE 997</strong></h3></div>
         </div> -->
 <div class="container">
-                            <img src="{{$img->get(1)->url}}" width="170" height="100" style="border: 2PX solid grey; margin-top: 0px;">
 
-                            <button class="glyphicon glyphicon-play" style="background:grey; color: black " onclick="document.getElementById('player').play()"></button>                            
-                            <button class="glyphicon glyphicon-stop" style="background:grey; color: black " onclick="document.getElementById('player').pause()"></button>
-                            <button class="glyphicon glyphicon-volume-up" style="background:grey; color: black " onclick="document.getElementById('player').volume+=0.1"></button>
-                            <button class="glyphicon glyphicon-volume-down" style="background:grey; color: black " onclick="document.getElementById('player').volume-=0.1"></button>
-                            </div> 
+
+                            <img src="{{$img->get(1)->url}}" width="150" height="100" style="border: 2PX solid grey; margin-top: 0px; margin-left: 0px;">
+                            
+
+                            <button class="glyphicon glyphicon-play "  style="background:grey; color: black; width: 30px; height: 30px; " onclick="document.getElementById('player').play()"></button>                            
+                            <button class="glyphicon glyphicon-stop" style="background:grey; color: black; width: 30px; height: 30px; " onclick="document.getElementById('player').pause()"></button>
+                            <button class="glyphicon glyphicon-volume-up" style="background:grey; color: black; width: 30px; height: 30px; " onclick="document.getElementById('player').volume+=0.1"></button>
+                            <button class="glyphicon glyphicon-volume-down" style="background:grey; color: black;width: 30px; height: 30px; " onclick="document.getElementById('player').volume-=0.1"></button>
+
+                            
+                          </div> 
                         </div>
      
   <!-- <div class=" col-md-1 img-responsive " align="center" style="background-color: white; "></div>
